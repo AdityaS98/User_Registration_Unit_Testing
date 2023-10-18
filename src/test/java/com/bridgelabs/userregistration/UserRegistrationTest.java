@@ -19,4 +19,17 @@ public class UserRegistrationTest {
 
     }
 
+
+    @Test
+
+    public void testForLastNameValidation() throws UserRegistrationException {
+
+        boolean b1 = obj.lastNameValidation("Sharma");
+        //  boolean b2 = obj.lastNameValidation("sharma");
+        Assertions.assertTrue(b1);
+        // Assertions.assertFalse(b2);
+
+    }
+
+
 }
