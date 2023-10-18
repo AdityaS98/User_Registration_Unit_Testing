@@ -19,5 +19,14 @@ public class UserRegistration {
         }
     }
 
+    public boolean emailValidation(String email) throws UserRegistrationException {
+        if (Pattern.matches("[a][b][c][.][a-z]{1,10}[@][b][l][.][c][o][.][a-z]{1,10}", email)) {
+            return true;
+        } else {
+            throw new UserRegistrationException("You have entered wrong Email");
+        }
+
+    }
+
 
 }

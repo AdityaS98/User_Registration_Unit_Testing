@@ -31,5 +31,13 @@ public class UserRegistrationTest {
 
     }
 
+    @Test
+    public void testForEmailValidation() throws UserRegistrationException {
+        boolean b1 = obj.emailValidation("abc.xyz@bl.co.in");
+        boolean b2 = obj.emailValidation("aditya@gmail.com");
+        Assertions.assertTrue(b1);
+        Assertions.assertFalse(b2);
+    }
+
 
 }
