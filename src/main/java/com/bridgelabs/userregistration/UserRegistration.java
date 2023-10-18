@@ -32,5 +32,9 @@ public class UserRegistration {
         return Pattern.matches("[1-9]{2}+[0-9]{10}", mobile);
     }
 
+    public boolean passWordValidation(String password) {
+        return Pattern.matches("(?=.*?[A-Z])(?=.*?[!@#$^&*.])(?=.*?[0-9])([a-zA-Z\\d@*#$&,.]){8,}", password);
+    }
+
 
 }

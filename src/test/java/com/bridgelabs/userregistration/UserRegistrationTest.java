@@ -49,5 +49,14 @@ public class UserRegistrationTest {
 
     }
 
+    @Test
+
+    public void testforpassword() {
+        boolean b1 = obj.passWordValidation("AdityaSharma@2806");
+        boolean b2 = obj.passWordValidation("adityasharma");
+        Assertions.assertFalse(b2);
+        Assertions.assertTrue(b1);
+    }
+
 
 }
