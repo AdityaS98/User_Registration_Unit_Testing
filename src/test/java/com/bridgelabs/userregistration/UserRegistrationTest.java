@@ -39,5 +39,15 @@ public class UserRegistrationTest {
         Assertions.assertFalse(b2);
     }
 
+    @Test
+    public void testForMobileValidation() {
+
+        boolean b1 = obj.mobileNumberValidation("918887613856");
+        boolean b2 = obj.mobileNumberValidation("9795992894");
+        Assertions.assertTrue(b1);
+        Assertions.assertFalse(b2);
+
+    }
+
 
 }
